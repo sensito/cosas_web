@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html type="text/html">
+  <head>
+    <title>calculadora de tu masa</title>
+  </head>
+  <body>
+    <h1>tu peso en otro planeta</h1>
+    <p> por cuestiones de la gravedad tu masa y peso en otro planeta son diferentes</p>
+    <script type="text/javascript">
+     var usuario = prompt("indica tu peso");
+     var peso = parseFloat(usuario);
+     var g_tierra = 9.81;
+     var g_luna = 1.62;
+     var g_marte = 3.71;
+     var g_jupiter = 24.79;
+     var peso_final;
+     peso_final = usuario * g_luna / g_tierra;
+     peso_final = parseFloat(peso_final);
+     document.write("tu peso en la luna es <strong>" + peso_final + " Kg</strong");
+    </script>
+  </body>
+
+
+</html>
